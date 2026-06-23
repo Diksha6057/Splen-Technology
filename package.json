@@ -1,0 +1,21 @@
+{
+  "name": "splen",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diksha6057/Splen-Technology.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diksha6057/Splen-Technology/issues"
+  },
+  "homepage": "https://github.com/Diksha6057/Splen-Technology#readme"
+}
