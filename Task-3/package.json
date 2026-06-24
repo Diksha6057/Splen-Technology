@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Diksha6057/Splen-Technology/issues"
   },
-  "homepage": "https://github.com/Diksha6057/Splen-Technology#readme"
+  "homepage": "https://github.com/Diksha6057/Splen-Technology#readme",
+  "dependencies": {
+    "random-words": "^2.0.1"
+  }
 }

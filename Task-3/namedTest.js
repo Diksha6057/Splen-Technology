@@ -16,6 +16,9 @@ import {
     isOdd
 } from "./namedExport.js";
 
+import {generate} from "random-words";
+console.log("Random generated word is : " + generate());
+console.log(generate());
 console.log("NAMED EXPORTS");
 
 console.log(PI);
