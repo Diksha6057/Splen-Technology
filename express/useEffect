@@ -1,0 +1,50 @@
+import { useEffect, useState } from "react";
+import "./App.css";
+import TableRow from "./TableRow";
+
+function App() {
+  let [data, setData] = useState([]);
+  let [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchApi = async () => {
+      try {
+        setLoading(true);
+        const res = await fetch("https://jsonplaceholder.typicode.com/users");
+        const val = await res.json();
+        setData(val);
+        setLoading(false);
+      } catch (err) {
+        console.log(err);
+        setLoading(false);
+      }
+    };
+    fetchApi();
+  }, []);
+  return (
+    <div className="App">
+      <h1>Counter Application</h1>
+      {loading ? (
+        <h1>Loading....</h1>
+      ) : (
+        <table>
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Name</th>
+              <th>UserName</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((el) => {
+              return <TableRow key={el.id} el={el}></TableRow>;
+            })}
+          </tbody>
+        </table>
+      )}
+    </div>
+  );
+}
+
+export default App;
